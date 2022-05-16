@@ -1,0 +1,71 @@
+$color1: rgb(29, 29, 29);
+$color2: rgb(214, 214, 214);
+$color3: rgb(22, 22, 22);
+$color4: #141414;
+$color5: #e50914;
+$color6: #595959;
+$color7: #222222;
+
+.TopBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100vw;
+  font-size: 0.8rem;
+  height: 2rem;
+  z-index: 1000;
+  background-color: $color1;
+  .menu-bt {
+    height: 2rem;
+    width: 2rem;
+    background-color: $color3;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .menu-bt:hover {
+    filter: brightness(150%);
+  }
+  .content {
+    color: $color2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 2rem;
+    flex-grow: 1;
+    -webkit-app-region: drag;
+    div {
+      -webkit-app-region: drag;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      .logo {
+        margin-left: 0.5rem;
+        height: 2rem;
+        width: 2rem;
+      }
+      h1 {
+        font-size: 14px;
+      }
+    }
+  }
+  .bt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color2;
+    z-index: 5;
+    width: 2rem;
+    height: 2rem;
+
+    background-color: $color3;
+    cursor: pointer;
+  }
+  .bt:hover {
+    filter: brightness(150%);
+  }
+}

@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap");
+.TopList {
+  -webkit-transform: translateY(-50vw);
+          transform: translateY(-50vw);
+  width: 100vw;
+}
+
+.TopList .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  overflow-x: scroll;
+  padding-left: 3vw;
+}
+
+.TopList .list .elem {
+  font-size: 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40vw;
+  padding-left: 4vw;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  z-index: 6;
+  color: red;
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke-color: #595959;
+  -webkit-text-stroke-width: 5px;
+  font-family: "Titillium Web", sans-serif;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+.TopList .list .elem img {
+  height: 16vw;
+  width: 12vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.TopList .list .elem:hover {
+  -webkit-transform: scale(120%);
+          transform: scale(120%);
+  cursor: pointer;
+}
+/*# sourceMappingURL=TopList.css.map */
