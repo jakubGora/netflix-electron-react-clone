@@ -3,6 +3,14 @@
   -webkit-transform: translateY(-50vw);
           transform: translateY(-50vw);
   width: 100vw;
+  color: white;
+}
+
+.TopList h1 {
+  font-size: 2.4vw;
+  margin-left: 3rem;
+  margin-top: 5vw;
+  margin-bottom: -7vw;
 }
 
 .TopList .list {
@@ -16,11 +24,77 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  overflow-y: hidden;
   overflow-x: scroll;
   padding-left: 3vw;
 }
 
+.TopList .list .trailer-mini {
+  -webkit-box-shadow: 1rem 1rem 1rem black;
+          box-shadow: 1rem 1rem 1rem black;
+  min-width: 15rem;
+  width: 15rem;
+  background-color: #141414;
+  z-index: 105;
+  margin-right: -15rem;
+  -webkit-transform: translateX(10rem);
+          transform: translateX(10rem);
+  -webkit-transition: height ease 1s;
+  transition: height ease 1s;
+  pointer-events: none;
+}
+
+.TopList .list .trailer-mini .react-player {
+  height: 50rem;
+  margin-top: -5rem;
+  pointer-events: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.TopList .list .trailer-mini .react-player > video {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.TopList .list .trailer-mini img {
+  height: 15vw;
+  width: 25vw;
+  margin-top: -5rem;
+  pointer-events: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.TopList .list .trailer-mini .info {
+  background-color: #141414;
+  -webkit-box-shadow: 0 -0.5rem 1rem #141414;
+          box-shadow: 0 -0.5rem 1rem #141414;
+  padding: 1rem;
+  -webkit-transform: translateY(-1.6rem);
+          transform: translateY(-1.6rem);
+  overflow-y: hidden;
+  padding-top: 0.3rem;
+  height: 12vw;
+  color: #d4d4d4;
+}
+
+.TopList .list .trailer-mini .info h1 {
+  font-size: 1.2rem;
+  color: #d4d4d4;
+  margin-left: 0;
+  margin-top: 1rem;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.TopList .list .trailer-mini .info h2 {
+  font-size: 1rem;
+  color: #a7a7a7;
+}
+
 .TopList .list .elem {
+  margin-top: 2vw;
   font-size: 20vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,8 +105,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 40vw;
-  padding-left: 4vw;
+  width: 20vw;
+  margin-left: 4vw;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   z-index: 6;
   color: red;
@@ -42,18 +116,243 @@
   font-family: "Titillium Web", sans-serif;
   -webkit-transition: all ease 1s;
   transition: all ease 1s;
+  margin-bottom: -5vw;
+  cursor: pointer;
 }
 
 .TopList .list .elem img {
+  margin-left: -2vw;
   height: 16vw;
   width: 12vw;
   -o-object-fit: cover;
      object-fit: cover;
+  pointer-events: none;
+  border-radius: 0.5rem;
 }
 
-.TopList .list .elem:hover {
-  -webkit-transform: scale(120%);
-          transform: scale(120%);
-  cursor: pointer;
+.TopList .list .elem:nth-of-type(1):hover ~ .trailer-mini {
+  height: 15vw;
+  min-width: 25vw;
+  margin-left: -22vw;
+  -webkit-transform: translateX(calc(-9 * 24vw)) translateY(5vw);
+          transform: translateX(calc(-9 * 24vw)) translateY(5vw);
+}
+
+.TopList .list .elem:nth-of-type(2):hover ~ .trailer-mini {
+  height: 15vw;
+  min-width: 25vw;
+  margin-left: -22vw;
+  -webkit-transform: translateX(calc(-8 * 24vw)) translateY(5vw);
+          transform: translateX(calc(-8 * 24vw)) translateY(5vw);
+}
+
+.TopList .list .elem:nth-of-type(3):hover ~ .trailer-mini {
+  height: 15vw;
+  min-width: 25vw;
+  margin-left: -22vw;
+  -webkit-transform: translateX(calc(-7 * 24vw)) translateY(5vw);
+          transform: translateX(calc(-7 * 24vw)) translateY(5vw);
+}
+
+.TopList .list .elem:nth-of-type(4):hover ~ .trailer-mini {
+  height: 15vw;
+  min-width: 25vw;
+  margin-left: -22vw;
+  -webkit-transform: translateX(calc(-6 * 24vw)) translateY(5vw);
+          transform: translateX(calc(-6 * 24vw)) translateY(5vw);
+}
+
+.TopList .list .elem:nth-of-type(5):hover ~ .trailer-mini {
+  height: 15vw;
+  min-width: 25vw;
+  margin-left: -22vw;
+  -webkit-transform: translateX(calc(-5 * 24vw)) translateY(5vw);
+          transform: translateX(calc(-5 * 24vw)) translateY(5vw);
+}
+
+.TopList .list .elem:nth-of-type(6):hover ~ .trailer-mini {
+  height: 15vw;
+  min-width: 25vw;
+  margin-left: -22vw;
+  -webkit-transform: translateX(calc(-4 * 24vw)) translateY(5vw);
+          transform: translateX(calc(-4 * 24vw)) translateY(5vw);
+}
+
+.TopList .list .elem:nth-of-type(7):hover ~ .trailer-mini {
+  height: 15vw;
+  min-width: 25vw;
+  margin-left: -22vw;
+  -webkit-transform: translateX(calc(-3 * 24vw)) translateY(5vw);
+          transform: translateX(calc(-3 * 24vw)) translateY(5vw);
+}
+
+.TopList .list .elem:nth-of-type(8):hover ~ .trailer-mini {
+  height: 15vw;
+  min-width: 25vw;
+  margin-left: -22vw;
+  -webkit-transform: translateX(calc(-2 * 24vw)) translateY(5vw);
+          transform: translateX(calc(-2 * 24vw)) translateY(5vw);
+}
+
+.TopList .list .elem:nth-of-type(9):hover ~ .trailer-mini {
+  height: 15vw;
+  min-width: 25vw;
+  margin-left: -22vw;
+  -webkit-transform: translateX(calc(-1 * 24vw)) translateY(5vw);
+          transform: translateX(calc(-1 * 24vw)) translateY(5vw);
+}
+
+.TopList .list .elem:nth-of-type(10):hover ~ .trailer-mini {
+  height: 15vw;
+  min-width: 25vw;
+  margin-left: -22vw;
+  -webkit-transform: translateX(calc(-0rem)) translateY(5vw);
+          transform: translateX(calc(-0rem)) translateY(5vw);
+}
+
+@media screen and (min-width: 1200px) {
+  .TopList h1 {
+    margin-top: 3rem;
+    margin-bottom: -8rem;
+  }
+  .TopList .list {
+    padding-left: 3rem;
+  }
+  .TopList .list .trailer-mini img {
+    height: 13rem;
+    width: 25rem;
+    margin-top: -5rem;
+    pointer-events: none;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .TopList .list .trailer-mini .info {
+    background-color: #141414;
+    -webkit-box-shadow: 0 -0.5rem 1rem #141414;
+            box-shadow: 0 -0.5rem 1rem #141414;
+    padding: 1rem;
+    -webkit-transform: translateY(-1.6rem);
+            transform: translateY(-1.6rem);
+    overflow-y: hidden;
+    padding-top: 0.3rem;
+    height: 12rem;
+    color: #d4d4d4;
+  }
+  .TopList .list .trailer-mini .info h1 {
+    font-size: 1.2rem;
+    color: #d4d4d4;
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+  .TopList .list .trailer-mini .info h2 {
+    margin-top: 3rem;
+    font-size: 1rem;
+    color: #a7a7a7;
+  }
+  .TopList .list .elem {
+    margin-top: 2rem;
+    font-size: 20rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 20rem;
+    margin-left: 4rem;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    z-index: 6;
+    color: red;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-color: #595959;
+    -webkit-text-stroke-width: 5px;
+    font-family: "Titillium Web", sans-serif;
+    -webkit-transition: all ease 1s;
+    transition: all ease 1s;
+    margin-bottom: -6srem;
+    cursor: pointer;
+  }
+  .TopList .list .elem img {
+    margin-left: -2vw;
+    height: 16rem;
+    width: 12rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    pointer-events: none;
+    border-radius: 0.5rem;
+  }
+  .TopList .list .elem:nth-of-type(1):hover ~ .trailer-mini {
+    height: 15rem;
+    min-width: 25rem;
+    margin-left: -22rem;
+    -webkit-transform: translateX(calc(-9 * 24rem)) translateY(5vw);
+            transform: translateX(calc(-9 * 24rem)) translateY(5vw);
+  }
+  .TopList .list .elem:nth-of-type(2):hover ~ .trailer-mini {
+    height: 15rem;
+    min-width: 25rem;
+    margin-left: -22rem;
+    -webkit-transform: translateX(calc(-8 * 24rem)) translateY(5vw);
+            transform: translateX(calc(-8 * 24rem)) translateY(5vw);
+  }
+  .TopList .list .elem:nth-of-type(3):hover ~ .trailer-mini {
+    height: 15rem;
+    min-width: 25rem;
+    margin-left: -22rem;
+    -webkit-transform: translateX(calc(-7 * 24rem)) translateY(5vw);
+            transform: translateX(calc(-7 * 24rem)) translateY(5vw);
+  }
+  .TopList .list .elem:nth-of-type(4):hover ~ .trailer-mini {
+    height: 15rem;
+    min-width: 25rem;
+    margin-left: -22rem;
+    -webkit-transform: translateX(calc(-6 * 24rem)) translateY(5vw);
+            transform: translateX(calc(-6 * 24rem)) translateY(5vw);
+  }
+  .TopList .list .elem:nth-of-type(5):hover ~ .trailer-mini {
+    height: 15rem;
+    min-width: 25rem;
+    margin-left: -22rem;
+    -webkit-transform: translateX(calc(-5 * 24rem)) translateY(5vw);
+            transform: translateX(calc(-5 * 24rem)) translateY(5vw);
+  }
+  .TopList .list .elem:nth-of-type(6):hover ~ .trailer-mini {
+    height: 15rem;
+    min-width: 25rem;
+    margin-left: -22rem;
+    -webkit-transform: translateX(calc(-4 * 24rem)) translateY(5vw);
+            transform: translateX(calc(-4 * 24rem)) translateY(5vw);
+  }
+  .TopList .list .elem:nth-of-type(7):hover ~ .trailer-mini {
+    height: 15rem;
+    min-width: 25rem;
+    margin-left: -22rem;
+    -webkit-transform: translateX(calc(-3 * 24rem)) translateY(5vw);
+            transform: translateX(calc(-3 * 24rem)) translateY(5vw);
+  }
+  .TopList .list .elem:nth-of-type(8):hover ~ .trailer-mini {
+    height: 15rem;
+    min-width: 25rem;
+    margin-left: -22rem;
+    -webkit-transform: translateX(calc(-2 * 24rem)) translateY(5vw);
+            transform: translateX(calc(-2 * 24rem)) translateY(5vw);
+  }
+  .TopList .list .elem:nth-of-type(9):hover ~ .trailer-mini {
+    height: 15rem;
+    min-width: 25rem;
+    margin-left: -22rem;
+    -webkit-transform: translateX(calc(-1 * 24rem)) translateY(5vw);
+            transform: translateX(calc(-1 * 24rem)) translateY(5vw);
+  }
+  .TopList .list .elem:nth-of-type(10):hover ~ .trailer-mini {
+    height: 15rem;
+    min-width: 25rem;
+    margin-left: -22rem;
+    -webkit-transform: translateX(calc(-0rem)) translateY(5vw);
+            transform: translateX(calc(-0rem)) translateY(5vw);
+  }
 }
 /*# sourceMappingURL=TopList.css.map */

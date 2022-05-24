@@ -5,6 +5,7 @@
   transform: translateY(-10%);
   z-index: 0;
   position: relative;
+  margin-bottom: 40vw;
 
   .react-player > video {
     position: absolute;
@@ -53,15 +54,15 @@
   .about {
     font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     width: 50%;
-
+    margin-bottom: 3vw;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
     height: 90vh;
-
-    transform: translateY(-100%);
+    position: absolute;
+    bottom: 0vw;
     padding: 3rem;
 
     .logo {
@@ -106,6 +107,48 @@
       }
       button:hover {
         filter: brightness(80%);
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .TopTriller {
+    max-height: 900px;
+    .about {
+      font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial,
+        sans-serif;
+      width: 50%;
+
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+      height: 90vh;
+      position: absolute;
+      bottom: 0vw;
+      padding: 3rem;
+      margin-bottom: 3rem;
+      .logo {
+        img {
+          max-width: 600px;
+        }
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+      .btns {
+        button {
+          font-size: 1rem;
+          cursor: pointer;
+          margin-right: 0.5rem;
+          padding: 1rem;
+          padding-left: 2rem;
+          padding-right: 2rem;
+        }
       }
     }
   }

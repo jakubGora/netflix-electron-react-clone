@@ -1,6 +1,6 @@
 .TopMenu {
   position: fixed;
-  top: 2rem;
+
   transition: all 1s ease;
   height: 6vw;
   z-index: 100;
@@ -8,6 +8,12 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgb(0, 0, 0) 70%,
+    rgb(0, 0, 0) 100%
+  );
   .menu {
     color: white;
     display: flex;
@@ -141,6 +147,49 @@
       background: #ffffff;
       background-color: rgba(255, 255, 255, 0);
       z-index: 1;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .TopMenu {
+    height: 6vw;
+    .menu {
+      .logo {
+        img {
+          height: 48px;
+        }
+      }
+      ul {
+        li {
+          font-size: 14px;
+
+          padding: 12px;
+        }
+      }
+    }
+    .btns {
+      .bt {
+        padding: 12px;
+        font-size: 19px;
+
+        img {
+          height: 36px;
+        }
+      }
+
+      .user {
+        .user {
+          padding: 14px;
+          font-size: 18px;
+
+          img {
+            height: 36px;
+          }
+        }
+        .box {
+          margin-bottom: -4vw;
+        }
+      }
     }
   }
 }

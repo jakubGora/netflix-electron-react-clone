@@ -5,6 +5,7 @@
           transform: translateY(-10%);
   z-index: 0;
   position: relative;
+  margin-bottom: 40vw;
 }
 
 .TopTriller .react-player > video {
@@ -52,6 +53,7 @@
 .TopTriller .about {
   font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   width: 50%;
+  margin-bottom: 3vw;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -67,8 +69,8 @@
       -ms-flex-pack: end;
           justify-content: flex-end;
   height: 90vh;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  position: absolute;
+  bottom: 0vw;
   padding: 3rem;
 }
 
@@ -127,5 +129,51 @@
 .TopTriller .about .btns button:hover {
   -webkit-filter: brightness(80%);
           filter: brightness(80%);
+}
+
+@media screen and (min-width: 1200px) {
+  .TopTriller {
+    max-height: 900px;
+  }
+  .TopTriller .about {
+    font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 50%;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: 90vh;
+    position: absolute;
+    bottom: 0vw;
+    padding: 3rem;
+    margin-bottom: 3rem;
+  }
+  .TopTriller .about .logo img {
+    max-width: 600px;
+  }
+  .TopTriller .about h1 {
+    font-size: 1.5rem;
+  }
+  .TopTriller .about p {
+    font-size: 1.2rem;
+  }
+  .TopTriller .about .btns button {
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 /*# sourceMappingURL=TopTrilller.css.map */

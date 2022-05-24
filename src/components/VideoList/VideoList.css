@@ -1,0 +1,428 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap");
+.VideoList {
+  -webkit-transform: translateY(-50vw);
+          transform: translateY(-50vw);
+  width: 100vw;
+  color: white;
+  height: 20vw;
+}
+
+.VideoList h1 {
+  font-size: 2.4vw;
+  font-weight: 700;
+  margin-left: 3rem;
+  margin-top: 3vw;
+  margin-bottom: -2rem;
+}
+
+.VideoList .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding-left: 5vw;
+  padding-bottom: 5vw;
+}
+
+.VideoList .list .trailer-mini {
+  -webkit-box-shadow: 1rem 1rem 1rem black;
+          box-shadow: 1rem 1rem 1rem black;
+  width: 24vw;
+  height: 18vw;
+  background-color: #111111;
+  z-index: 111;
+  margin-right: -24vw;
+  -webkit-transition: height ease 1s;
+  transition: height ease 1s;
+  pointer-events: none;
+}
+
+.VideoList .list .trailer-mini .react-player {
+  height: 40rem;
+  margin-top: -5rem;
+  pointer-events: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.VideoList .list .trailer-mini .react-player > video {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.VideoList .list .trailer-mini img {
+  z-index: 105;
+  margin-top: -22vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 50%;
+  border-radius: 0.5rem;
+}
+
+.VideoList .list .trailer-mini .info {
+  background-color: #111111;
+  -webkit-box-shadow: 0 -0.5rem 1rem #111111;
+          box-shadow: 0 -0.5rem 1rem #111111;
+  padding: 1rem;
+  -webkit-transform: translateY(2.8rem);
+          transform: translateY(2.8rem);
+  padding-top: 0.3rem;
+  margin-top: -5rem;
+  color: #d4d4d4;
+}
+
+.VideoList .list .trailer-mini .info h1 {
+  font-size: 1.2rem;
+  color: #d4d4d4;
+  margin-left: 0;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.VideoList .list .trailer-mini .info h2 {
+  font-size: 1rem;
+  color: #a7a7a7;
+}
+
+.VideoList .list .elem {
+  height: 14vw;
+  font-size: 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20vw;
+  margin-left: 3vw;
+  margin-bottom: 5vw;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  z-index: 6;
+  color: red;
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke-color: #595959;
+  -webkit-text-stroke-width: 5px;
+  font-family: "Titillium Web", sans-serif;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+  margin-bottom: -5vw;
+  cursor: pointer;
+}
+
+.VideoList .list .elem img {
+  margin-left: -2vw;
+  height: 13vw;
+  min-width: 22vw;
+  width: 22vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+  border-radius: 0.5rem;
+}
+
+.VideoList .list .elem:nth-of-type(1):hover ~ .trailer-mini {
+  height: 18vw;
+  min-width: 26vw;
+  width: 26vw;
+  margin-left: -1vw;
+  -webkit-transform: translateX(calc(-10 * 23vw)) translateY(5vw);
+          transform: translateX(calc(-10 * 23vw)) translateY(5vw);
+}
+
+.VideoList .list .elem:nth-of-type(2):hover ~ .trailer-mini {
+  height: 18vw;
+  min-width: 26vw;
+  width: 26vw;
+  margin-left: -1vw;
+  -webkit-transform: translateX(calc(-9 * 23vw)) translateY(5vw);
+          transform: translateX(calc(-9 * 23vw)) translateY(5vw);
+}
+
+.VideoList .list .elem:nth-of-type(3):hover ~ .trailer-mini {
+  height: 18vw;
+  min-width: 26vw;
+  width: 26vw;
+  margin-left: -1vw;
+  -webkit-transform: translateX(calc(-8 * 23vw)) translateY(5vw);
+          transform: translateX(calc(-8 * 23vw)) translateY(5vw);
+}
+
+.VideoList .list .elem:nth-of-type(4):hover ~ .trailer-mini {
+  height: 18vw;
+  min-width: 26vw;
+  width: 26vw;
+  margin-left: -1vw;
+  -webkit-transform: translateX(calc(-7 * 23vw)) translateY(5vw);
+          transform: translateX(calc(-7 * 23vw)) translateY(5vw);
+}
+
+.VideoList .list .elem:nth-of-type(5):hover ~ .trailer-mini {
+  height: 18vw;
+  min-width: 26vw;
+  width: 26vw;
+  margin-left: -1vw;
+  -webkit-transform: translateX(calc(-6 * 23vw)) translateY(5vw);
+          transform: translateX(calc(-6 * 23vw)) translateY(5vw);
+}
+
+.VideoList .list .elem:nth-of-type(6):hover ~ .trailer-mini {
+  height: 18vw;
+  min-width: 26vw;
+  width: 26vw;
+  margin-left: -1vw;
+  -webkit-transform: translateX(calc(-5 * 23vw)) translateY(5vw);
+          transform: translateX(calc(-5 * 23vw)) translateY(5vw);
+}
+
+.VideoList .list .elem:nth-of-type(7):hover ~ .trailer-mini {
+  height: 18vw;
+  min-width: 26vw;
+  width: 26vw;
+  margin-left: -1vw;
+  -webkit-transform: translateX(calc(-4 * 23vw)) translateY(5vw);
+          transform: translateX(calc(-4 * 23vw)) translateY(5vw);
+}
+
+.VideoList .list .elem:nth-of-type(8):hover ~ .trailer-mini {
+  height: 18vw;
+  min-width: 26vw;
+  width: 26vw;
+  margin-left: -1vw;
+  -webkit-transform: translateX(calc(-3 * 23vw)) translateY(5vw);
+          transform: translateX(calc(-3 * 23vw)) translateY(5vw);
+}
+
+.VideoList .list .elem:nth-of-type(9):hover ~ .trailer-mini {
+  height: 18vw;
+  min-width: 26vw;
+  width: 26vw;
+  margin-left: -1vw;
+  -webkit-transform: translateX(calc(-2 * 23vw)) translateY(5vw);
+          transform: translateX(calc(-2 * 23vw)) translateY(5vw);
+}
+
+.VideoList .list .elem:nth-of-type(10):hover ~ .trailer-mini {
+  height: 18vw;
+  min-width: 26vw;
+  width: 26vw;
+  margin-left: -1vw;
+  -webkit-transform: translateX(calc(-1 * 23vw)) translateY(5vw);
+          transform: translateX(calc(-1 * 23vw)) translateY(5vw);
+}
+
+@media screen and (min-width: 1200px) {
+  .VideoList {
+    -webkit-transform: translateY(-50vw);
+            transform: translateY(-50vw);
+    width: 100vw;
+    color: white;
+    height: 20rem;
+    margin-bottom: 2rem;
+  }
+  .VideoList h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-left: 3rem;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+    margin-bottom: -3rem;
+  }
+  .VideoList .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding-left: 2rem;
+  }
+  .VideoList .list .trailer-mini {
+    -webkit-box-shadow: 1rem 1rem 1rem black;
+            box-shadow: 1rem 1rem 1rem black;
+    width: 24rem;
+    height: 18rem;
+    background-color: #111111;
+    z-index: 200;
+    margin-right: -24rem;
+    -webkit-transition: height ease 1s;
+    transition: height ease 1s;
+    pointer-events: none;
+  }
+  .VideoList .list .trailer-mini .react-player {
+    height: 40rem;
+    margin-top: -5rem;
+    pointer-events: none;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .VideoList .list .trailer-mini .react-player > video {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .VideoList .list .trailer-mini img {
+    z-index: 105;
+    margin-top: -22vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 50%;
+    border-radius: 0.5rem;
+  }
+  .VideoList .list .trailer-mini .info {
+    background-color: #111111;
+    -webkit-box-shadow: 0 -0.5rem 1rem #111111;
+            box-shadow: 0 -0.5rem 1rem #111111;
+    padding: 1rem;
+    -webkit-transform: translateY(2.8rem);
+            transform: translateY(2.8rem);
+    padding-top: 0.3rem;
+    margin-top: -5rem;
+    color: #d4d4d4;
+  }
+  .VideoList .list .trailer-mini .info h1 {
+    font-size: 1.2rem;
+    color: #d4d4d4;
+    margin-left: 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  .VideoList .list .trailer-mini .info h2 {
+    font-size: 1rem;
+    color: #a7a7a7;
+    margin-top: 2rem;
+  }
+  .VideoList .list .elem {
+    height: 14vw;
+    font-size: 20rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 20rem;
+    margin-left: 3rem;
+    margin-bottom: 5rem;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    z-index: 6;
+    color: red;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-color: #595959;
+    -webkit-text-stroke-width: 5px;
+    font-family: "Titillium Web", sans-serif;
+    -webkit-transition: all ease 1s;
+    transition: all ease 1s;
+    margin-bottom: -5rem;
+    cursor: pointer;
+  }
+  .VideoList .list .elem img {
+    margin-left: -2rem;
+    height: 13rem;
+    min-width: 22rem;
+    width: 22rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    pointer-events: none;
+    border-radius: 0.5rem;
+  }
+  .VideoList .list .elem:nth-of-type(1):hover ~ .trailer-mini {
+    height: 18rem;
+    min-width: 26rem;
+    width: 26rem;
+    margin-left: -1rem;
+    -webkit-transform: translateX(calc(-10 * 23rem)) translateY(5rem);
+            transform: translateX(calc(-10 * 23rem)) translateY(5rem);
+  }
+  .VideoList .list .elem:nth-of-type(2):hover ~ .trailer-mini {
+    height: 18rem;
+    min-width: 26rem;
+    width: 26rem;
+    margin-left: -1rem;
+    -webkit-transform: translateX(calc(-9 * 23rem)) translateY(5vw);
+            transform: translateX(calc(-9 * 23rem)) translateY(5vw);
+  }
+  .VideoList .list .elem:nth-of-type(3):hover ~ .trailer-mini {
+    height: 18rem;
+    min-width: 26rem;
+    width: 26rem;
+    margin-left: -1rem;
+    -webkit-transform: translateX(calc(-8 * 23rem)) translateY(5vw);
+            transform: translateX(calc(-8 * 23rem)) translateY(5vw);
+  }
+  .VideoList .list .elem:nth-of-type(4):hover ~ .trailer-mini {
+    height: 18rem;
+    min-width: 26rem;
+    width: 26rem;
+    margin-left: -1rem;
+    -webkit-transform: translateX(calc(-7 * 23rem)) translateY(5vw);
+            transform: translateX(calc(-7 * 23rem)) translateY(5vw);
+  }
+  .VideoList .list .elem:nth-of-type(5):hover ~ .trailer-mini {
+    height: 18rem;
+    min-width: 26rem;
+    width: 26rem;
+    margin-left: -1rem;
+    -webkit-transform: translateX(calc(-6 * 23rem)) translateY(5vw);
+            transform: translateX(calc(-6 * 23rem)) translateY(5vw);
+  }
+  .VideoList .list .elem:nth-of-type(6):hover ~ .trailer-mini {
+    height: 18rem;
+    min-width: 26rem;
+    width: 26rem;
+    margin-left: -1rem;
+    -webkit-transform: translateX(calc(-5 * 23rem)) translateY(5vw);
+            transform: translateX(calc(-5 * 23rem)) translateY(5vw);
+  }
+  .VideoList .list .elem:nth-of-type(7):hover ~ .trailer-mini {
+    height: 18rem;
+    min-width: 26rem;
+    width: 26rem;
+    margin-left: -1rem;
+    -webkit-transform: translateX(calc(-4 * 23rem)) translateY(5vw);
+            transform: translateX(calc(-4 * 23rem)) translateY(5vw);
+  }
+  .VideoList .list .elem:nth-of-type(8):hover ~ .trailer-mini {
+    height: 18rem;
+    min-width: 26rem;
+    width: 26rem;
+    margin-left: -1rem;
+    -webkit-transform: translateX(calc(-3 * 23rem)) translateY(5vw);
+            transform: translateX(calc(-3 * 23rem)) translateY(5vw);
+  }
+  .VideoList .list .elem:nth-of-type(9):hover ~ .trailer-mini {
+    height: 18rem;
+    min-width: 26rem;
+    width: 26rem;
+    margin-left: -1rem;
+    -webkit-transform: translateX(calc(-2 * 23rem)) translateY(5vw);
+            transform: translateX(calc(-2 * 23rem)) translateY(5vw);
+  }
+  .VideoList .list .elem:nth-of-type(10):hover ~ .trailer-mini {
+    height: 18rem;
+    min-width: 26rem;
+    width: 26rem;
+    margin-left: -1rem;
+    -webkit-transform: translateX(calc(-1 * 23rem)) translateY(5vw);
+            transform: translateX(calc(-1 * 23rem)) translateY(5vw);
+  }
+}
+/*# sourceMappingURL=VideoList.css.map */

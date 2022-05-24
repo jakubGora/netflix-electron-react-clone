@@ -1,6 +1,5 @@
 .TopMenu {
   position: fixed;
-  top: 2rem;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   height: 6vw;
@@ -16,6 +15,8 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(70%, black), to(black));
+  background: linear-gradient(0deg, transparent 0%, black 70%, black 100%);
 }
 
 .TopMenu .menu {
@@ -226,5 +227,35 @@
   background: #ffffff;
   background-color: rgba(255, 255, 255, 0);
   z-index: 1;
+}
+
+@media screen and (min-width: 1200px) {
+  .TopMenu {
+    height: 6vw;
+  }
+  .TopMenu .menu .logo img {
+    height: 48px;
+  }
+  .TopMenu .menu ul li {
+    font-size: 14px;
+    padding: 12px;
+  }
+  .TopMenu .btns .bt {
+    padding: 12px;
+    font-size: 19px;
+  }
+  .TopMenu .btns .bt img {
+    height: 36px;
+  }
+  .TopMenu .btns .user .user {
+    padding: 14px;
+    font-size: 18px;
+  }
+  .TopMenu .btns .user .user img {
+    height: 36px;
+  }
+  .TopMenu .btns .user .box {
+    margin-bottom: -4vw;
+  }
 }
 /*# sourceMappingURL=TopMenu.css.map */
