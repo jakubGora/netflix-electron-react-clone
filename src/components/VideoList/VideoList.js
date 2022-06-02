@@ -65,7 +65,7 @@ function VideoList(props) {
           <div className="info">
             <h1>{currentVideo?.title}</h1>
             <h2>{currentVideo?.genre}</h2>
-            {currentVideo?.tags.split(",")[0]}
+            <p>{currentVideo?.tags.split(",")[0]}</p>
           </div>
         </div>
       </div>

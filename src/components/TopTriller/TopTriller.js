@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./TopTrilller.css";
 import ReactPlayer from "react-player";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,6 +8,18 @@ import {
   faPlay,
 } from "@fortawesome/free-solid-svg-icons";
 function TopTriller(props) {
+  const [currentFilm, setCurrentFilm] = useState();
+
+  useEffect(() => {
+    fetch(`http://localhost:8080/netflix/Search/${"Witcher"}`)
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        setCurrentFilm(data[0]);
+      });
+  }, []);
+
   return (
     <div className="TopTriller">
       {" "}
@@ -42,13 +54,11 @@ function TopTriller(props) {
           <img src={require("../../img/top10.png")} alt="top" height={"24px"} />{" "}
           Nr 1 w Polsce dzisiaj
         </h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sint,
-          saepe labore quas aliquid, facere officia ducimus corrupti ut vitae
-          dolorem ab? Fuga eos aperiam ipsa architecto dolor modi eaque!
-        </p>
+        <p>{currentFilm?.summary}</p>
         <div className="btns">
-          <button>
+          <button
+            onClick={() => window.open(currentFilm?.netflixLink, "_blank")}
+          >
             <FontAwesomeIcon icon={faPlay} /> Otwórz
           </button>
           <button>

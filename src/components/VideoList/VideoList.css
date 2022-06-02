@@ -68,28 +68,40 @@
 }
 
 .VideoList .list .trailer-mini .info {
-  background-color: #111111;
-  -webkit-box-shadow: 0 -0.5rem 1rem #111111;
-          box-shadow: 0 -0.5rem 1rem #111111;
+  background-color: #141414;
+  -webkit-box-shadow: 0 -0.5rem 1rem #141414;
+          box-shadow: 0 -0.5rem 1rem #141414;
   padding: 1rem;
-  -webkit-transform: translateY(2.8rem);
-          transform: translateY(2.8rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: hidden;
   padding-top: 0.3rem;
-  margin-top: -5rem;
+  height: 12rem;
   color: #d4d4d4;
 }
 
 .VideoList .list .trailer-mini .info h1 {
-  font-size: 1.2rem;
+  font-size: 1.6vw;
   color: #d4d4d4;
   margin-left: 0;
+  margin-top: 0;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
+  margin-bottom: 0;
 }
 
 .VideoList .list .trailer-mini .info h2 {
-  font-size: 1rem;
+  font-size: 1.2vw;
   color: #a7a7a7;
+}
+
+.VideoList .list .trailer-mini .info p {
+  font-size: 1.1vw;
 }
 
 .VideoList .list .elem {
@@ -267,7 +279,6 @@
   }
   .VideoList .list .trailer-mini .react-player {
     height: 40rem;
-    margin-top: -5rem;
     pointer-events: none;
     -o-object-fit: cover;
        object-fit: cover;
@@ -285,27 +296,34 @@
     border-radius: 0.5rem;
   }
   .VideoList .list .trailer-mini .info {
-    background-color: #111111;
-    -webkit-box-shadow: 0 -0.5rem 1rem #111111;
-            box-shadow: 0 -0.5rem 1rem #111111;
+    background-color: #141414;
+    -webkit-box-shadow: 0 -0.5rem 1rem #141414;
+            box-shadow: 0 -0.5rem 1rem #141414;
     padding: 1rem;
-    -webkit-transform: translateY(2.8rem);
-            transform: translateY(2.8rem);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow-y: hidden;
     padding-top: 0.3rem;
-    margin-top: -5rem;
+    height: 12rem;
     color: #d4d4d4;
   }
   .VideoList .list .trailer-mini .info h1 {
     font-size: 1.2rem;
     color: #d4d4d4;
     margin-left: 0;
+    margin-top: 0;
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
+    margin-bottom: 0;
   }
   .VideoList .list .trailer-mini .info h2 {
     font-size: 1rem;
     color: #a7a7a7;
-    margin-top: 2rem;
   }
   .VideoList .list .elem {
     height: 14vw;

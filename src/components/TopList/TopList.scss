@@ -54,24 +54,27 @@ $color7: #222222;
         object-fit: cover;
       }
       .info {
-        background-color: #141414;
         box-shadow: 0 -0.5rem 1rem #141414;
         padding: 1rem;
-        transform: translateY(-1.6rem);
-        overflow-y: hidden;
+        display: flex;
+        flex-direction: column;
+
         padding-top: 0.3rem;
         height: 12vw;
         color: #d4d4d4;
         h1 {
-          font-size: 1.2rem;
+          font-size: 1.5vw;
           color: #d4d4d4;
           margin-left: 0;
-          margin-top: 1rem;
-          transform: translate(0, 0);
+          margin-top: 0;
+          margin-bottom: 0;
         }
         h2 {
-          font-size: 1rem;
+          font-size: 1.2vw;
           color: rgb(167, 167, 167);
+        }
+        p {
+          font-size: 1.1vw;
         }
       }
     }
@@ -187,19 +190,18 @@ $color7: #222222;
           background-color: #141414;
           box-shadow: 0 -0.5rem 1rem #141414;
           padding: 1rem;
-          transform: translateY(-1.6rem);
+          display: flex;
+          flex-direction: column;
           overflow-y: hidden;
           padding-top: 0.3rem;
           height: 12rem;
           color: #d4d4d4;
           h1 {
             font-size: 1.2rem;
-            color: #d4d4d4;
+            color: #e0e0e0;
             margin-left: 0;
-            margin-top: 1rem;
           }
           h2 {
-            margin-top: 3rem;
             font-size: 1rem;
             color: rgb(167, 167, 167);
           }
